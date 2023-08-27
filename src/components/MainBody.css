@@ -1,0 +1,100 @@
+.mainBody{
+    background-image: url('/image/foodyZoneBG.png');
+    
+    height: calc(100vh - 200px);
+    background-size: cover;
+}
+.mainList{
+    background-color: rgba(0, 0, 0, 0.76);
+    height: calc(100% - 2rem);
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 350px 350px 350px ;
+    grid-template-rows: max-content;
+    gap: 20px;
+   padding:1rem 0;
+    overflow: scroll;
+}
+.mainList::-webkit-scrollbar {
+    display: none;
+}
+.item{
+    cursor: pointer;
+    background-color: rgba(231, 231, 231, 0.275);
+    width: 330px;
+    height: 160px;
+    border:0.5px solid rgba(231, 231, 231, 0.362);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    padding: 10px;
+
+    position: relative;
+}
+
+.itemInfo{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 115px;
+    gap: 2px;
+}
+.itemInfo p{
+    font-size: x-small;
+}
+.itemInfo button{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width:fit-content;
+    align-self: self-end;
+    /*margin-right: 10px;*/
+    padding:2px 5px;
+    border-radius: 5px;
+    color: white;
+    border-color: #FF4343;
+    background-color: #FF4343;
+}
+@media only screen and (max-width:1150px){
+    .mainList{
+        grid-template-columns: 350px 345px;
+    }
+}
+@media only screen and (max-width:770px){
+    .mainList{
+        grid-template-columns: 345px ;
+    }
+}
+@media only screen and (max-width:360px){
+    .mainList{
+        grid-template-columns: auto ;
+    }
+    .itemInfo p{
+        font-size: xx-small;
+        line-height: 13px;
+    }
+    .item{
+        width: 295px;
+    }
+    .itemInfo h5{
+        font-size:small;
+    }
+    .item{
+        height: 150px;
+    }
+}
+@media only screen and (max-width:300px){
+    .item{
+        width: 245px;
+        height: 125px;
+        padding: 5px;
+    }
+    .item img{
+        height: 120px;
+    }
+    
+}

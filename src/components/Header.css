@@ -1,0 +1,63 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    background-color: #323334;
+    color: white;
+    gap: 20px;
+}
+.topDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 4rem;
+    
+}
+.foodOption{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.foodOption Button{
+    cursor: pointer;
+    padding:2px 5px;
+    border-radius: 5px;
+    color: white;
+   /* border-color: #FF4343;*/
+    background-color: #FF4343;
+    font-size: x-small;
+}
+.foodOption Button:hover{
+    background-color: #923333;
+    border-color: #923333;
+}
+#search{
+    background-color: #323334;
+    border: 1px solid #FF4343;
+    border-radius: 5px;
+    padding: 5px;
+    width: 285px;
+    color: white;
+}
+.o{
+    color: #FF4343;
+}
+@media only screen and (max-width:900px){
+    .topDiv{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media only screen and (max-width:500px){
+    .topDiv {
+        margin: 0 1rem;
+        
+    }
+    #search{
+        width: 230px;
+    }
+}
