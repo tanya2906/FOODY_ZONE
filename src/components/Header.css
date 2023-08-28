@@ -22,19 +22,7 @@
     justify-content: center;
     gap: 10px;
 }
-.foodOption Button{
-    cursor: pointer;
-    padding:2px 5px;
-    border-radius: 5px;
-    color: white;
-   /* border-color: #FF4343;*/
-    background-color: #FF4343;
-    font-size: x-small;
-}
-.foodOption Button:hover{
-    background-color: #923333;
-    border-color: #923333;
-}
+
 #search{
     background-color: #323334;
     border: 1px solid #FF4343;
@@ -45,6 +33,15 @@
 }
 .o{
     color: #FF4343;
+}
+.button{
+    padding: 5px;
+    min-width: 50px;
+    border-radius: 10px;
+    background-color: red;
+}
+.button.active{
+    background-color: green;
 }
 @media only screen and (max-width:900px){
     .topDiv{
